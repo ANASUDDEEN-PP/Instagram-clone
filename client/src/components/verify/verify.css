@@ -1,0 +1,262 @@
+/* InstagramVerify.css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: #000;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color: #fff;
+    line-height: 1.5;
+  }
+  
+  .verify-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .verify-content {
+    width: 100%;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .verify-box {
+    background-color: #000;
+    border: 1px solid #333;
+    padding: 30px;
+    border-radius: 4px;
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .lock-icon {
+    width: 72px;
+    height: 72px;
+    border: 2px solid #00a0f5;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .verify-message {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+  
+  form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .security-code-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #121212;
+    border: 1px solid #333;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 14px;
+  }
+  
+  .security-code-input:focus {
+    outline: none;
+    border-color: #777;
+  }
+  
+  .confirm-button {
+    background-color: #00a0f5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .trust-device {
+    margin-bottom: 20px;
+  }
+  
+  .trust-device label {
+    display: flex;
+    align-items: flex-start;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .trust-device input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .checkbox-custom {
+    position: relative;
+    top: 3px;
+    height: 18px;
+    width: 18px;
+    background-color: transparent;
+    border: 1px solid #999;
+    border-radius: 3px;
+    margin-right: 10px;
+  }
+  
+  .trust-device input:checked ~ .checkbox-custom {
+    background-color: #00a0f5;
+    border-color: #00a0f5;
+  }
+  
+  .checkbox-custom:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .trust-device input:checked ~ .checkbox-custom:after {
+    display: block;
+    left: 5px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+  
+  .trust-text {
+    font-size: 14px;
+  }
+  
+  .trust-title {
+    font-weight: 600;
+  }
+  
+  .trust-subtitle {
+    font-size: 12px;
+    color: #999;
+  }
+  
+  .help-links {
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .help-links p {
+    margin-bottom: 5px;
+  }
+  
+  .sms-link, .backup-link {
+    color: #00a0f5;
+    text-decoration: none;
+  }
+  
+  .backup-message {
+    margin-top: 15px;
+    color: #999;
+  }
+  
+  .app-links {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .app-links p {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  
+  .app-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .app-button img {
+    height: 40px;
+  }
+  
+  .footer {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .footer-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    margin-bottom: 15px;
+  }
+  
+  .footer-nav li {
+    margin: 5px 8px;
+  }
+  
+  .footer-nav a {
+    color: #737373;
+    text-decoration: none;
+    font-size: 12px;
+  }
+  
+  .language-copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    color: #737373;
+  }
+  
+  .language-selector {
+    background: transparent;
+    border: none;
+    color: #737373;
+    font-size: 12px;
+  }
+  
+  .language-selector:focus {
+    outline: none;
+  }
+
+  .loader {
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-top: 3px solid #ffffff;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    animation: spin 1s linear infinite;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
